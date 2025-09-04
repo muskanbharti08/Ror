@@ -1,0 +1,24 @@
+group :development, :test do
+  # Debugging tools
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+
+  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
+  gem "brakeman", require: false
+
+  # Omakase Ruby styling
+  gem "rubocop-rails-omakase", require: false
+
+  # Fake data generator
+  gem "faker"
+end
+
+group :development do
+  # Use console on exceptions pages
+  gem "web-console"
+end
+
+group :test do
+  # System testing
+  gem "capybara"
+  gem "selenium-webdriver"
+end

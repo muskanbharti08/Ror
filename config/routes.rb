@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts
+   root "home_page#index"
   # root "home_page#about_page"
   get "home_page/about_page"
   get "home_page/contact_page"
