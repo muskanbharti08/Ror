@@ -1,4 +1,8 @@
 class HomePageController < ApplicationController
+  def index
+   
+  end
+
   def about_page
   end
 
